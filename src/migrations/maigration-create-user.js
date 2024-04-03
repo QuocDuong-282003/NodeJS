@@ -1,4 +1,7 @@
 'use strict';
+
+const { sequelize } = require('../models');
+
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   up: async (queryInterface, Sequelize) => {
@@ -29,7 +32,7 @@ module.exports = {
       },
       gender: {
 
-        type: Sequelize.BOOLEAN
+        type: Sequelize.STRING
       },
       roleId: {
         type: Sequelize.STRING
