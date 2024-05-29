@@ -14,6 +14,8 @@ module.exports = (sequelize, DataTypes) => {
             // mối quan hệ sql
             Allcode.hasMany(models.User, { foreignKey: 'positionId', as: 'positionData' })
             Allcode.hasMany(models.User, { foreignKey: 'gender', as: 'genderData' })
+            Allcode.hasMany(models.Schedule, { foreignKey: 'timeType', as: 'timeTypeData' })
+
         }
     }
     Allcode.init({
