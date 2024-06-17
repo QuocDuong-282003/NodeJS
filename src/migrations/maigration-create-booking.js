@@ -18,7 +18,7 @@ module.exports = {
             statusId: {
                 type: Sequelize.STRING
             },
-            doctorIde: {
+            doctorId: {
                 type: Sequelize.INTEGER
             },
             patientId: {
@@ -26,9 +26,13 @@ module.exports = {
             },
             date: {
 
-                type: Sequelize.DATE
+                type: Sequelize.STRING
             },
             timeType: {
+
+                type: Sequelize.STRING
+            },
+            token: {
 
                 type: Sequelize.STRING
             },
