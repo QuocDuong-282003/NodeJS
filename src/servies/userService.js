@@ -23,7 +23,7 @@ let handleUserLogin = (email, password) => {
             if (isExit) {
                 //user already exist
                 let user = await db.User.findOne({
-                    attributes: ['email', 'roleId', 'password', 'firstName', 'lastName'], // hàm hiển thị theo yêu cầu 
+                    attributes: ['id', 'email', 'roleId', 'password', 'firstName', 'lastName'], // hàm hiển thị theo yêu cầu 
                     where: { email: email },
                     raw: true
 
